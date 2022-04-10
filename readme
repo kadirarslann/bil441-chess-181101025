@@ -1,0 +1,6 @@
+main.py ile kodun başında belirtilen fen'lerden oyun başlatılır.
+deep6.py en güncel modeldir. Asıl odel deep6.py dir.
+deep6.py 102. satirdaki kod ile model kaydedilir.
+basit bir satranc gui si yapılmıştır fakat programı  çok yavaşlatmaktadır.
+main.py içerisinde minmax algoritmasinda 2 tarafın standart degerlendirme fonksiyonu kullandığı, sadece beyazın derin
+ögrenme modelini kullanıdı ve 2 tarafın derin ögrenme modelini kullandığı versiyonlar yazılmıştır.

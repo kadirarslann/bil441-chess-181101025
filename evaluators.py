@@ -150,11 +150,6 @@ def positionEvaluator(fenString,player):###taşları posizyonlarına göre numar
   return 2*score
 
 
-print(threadEvaluator("r1bqr1k1/pp3npp/2n5/3p3Q/8/P2B4/1BPN1PPP/R4RK1 w - - 4 18"))
-
-
-
-
 
 
 
