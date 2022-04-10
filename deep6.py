@@ -92,7 +92,7 @@ history = model.fit(inputs2, outputs,  #training
           validation_split=0.15,
           shuffle=True,
           callbacks=[callbacks.ReduceLROnPlateau(monitor='loss', patience=10),
-                     callbacks.EarlyStopping(monitor='loss', patience=15, min_delta=1e-3)])
+                     callbacks.EarlyStopping(monitor='loss', patience=15, min_delta=1e-4)])
 
 epochs = history.epoch
 hist = pd.DataFrame(history.history)
