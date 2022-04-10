@@ -87,12 +87,12 @@ model.compile(optimizer=tf.keras.optimizers.Adam(lr=0.01), loss='mean_squared_er
 model.summary()
 history = model.fit(inputs2, outputs,  #training
           batch_size=4096,
-          epochs=200,
+          epochs=150,
           verbose=1,
           validation_split=0.15,
           shuffle=True,
           callbacks=[callbacks.ReduceLROnPlateau(monitor='loss', patience=10),
-                     callbacks.EarlyStopping(monitor='loss', patience=15, min_delta=1e-4)])
+                     callbacks.EarlyStopping(monitor='loss', patience=15, min_delta=1e-3)])
 
 epochs = history.epoch
 hist = pd.DataFrame(history.history)
